@@ -30,7 +30,7 @@ public class Order {
     private Orderstatus orderstatus;  //주문상태
 
     @OneToMany(mappedBy = "order")
-    private List<OrderItem> orderItemList = new ArrayList<>();
+    private List<OrderItem> orderItems = new ArrayList<>();
 
     private LocalDateTime regTime;
 
